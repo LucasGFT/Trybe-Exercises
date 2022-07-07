@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="titulo">Formulario</h1>
+    <div class="formulario">
+      <form action="" method="get">
+        <fieldset class="teste">
+          <div class="linha-1 left">
+            <label for="input-name">Nome Completo:</label>
+            <input
+              type="text"
+              name="input-name"
+              id="input-name"
+              minlength="10"
+              maxlength="40"
+              required
+            />
+          </div>
+          <div class="linha-2 left">
+            <label for="input-email">Escreva seu email:</label>
+            <input
+              type="email"
+              name="input-email"
+              id="input-email"
+              required
+              minlength="10"
+              maxlength="50"
+            />
+          </div>
+          <div class="linha-3">
+            <input type="checkbox" name="opçoes-destino" id="opçoes1" checked />
+            <label for="opçoes1" class="opt1">Cidade</label>
+            <input type="checkbox" name="opçoes-destino" id="opçoes2" />
+            <label for="opçoes2" class="opt1">Campo</label>
+            <input type="checkbox" name="opçoes-destino" id="opçoes3" />
+            <label for="opçoes3" class="opt1">Praia</label>
+            <input type="checkbox" name="opçoes-destino" id="opçoes4" />
+            <label for="opçoes4" class="opt1">Montanhas</label>
+          </div>
+          <!-- <div class="linha-4 left">
+            <label for="input-email">Escreva seu email:</label>
+            <input type="email" name="input-email" id="input-email" />
+          </div> -->
+          <div class="linha-5">
+            <label for="area-resposta" class="left"
+              >Por que deveria ser a pessoa desenvolvedora a ganhar o concurso?
+            </label>
+            <textarea
+              style="resize: none"
+              name="area-resposta"
+              id="area-resposta"
+              class="text-area"
+              cols="30"
+              rows="10"
+              required
+              maxlength="500"
+            ></textarea>
+            <div class="linha-6">
+              <label for="">Qual a melhor data para realizar sua viagem?</label>
+              <br />
+              <input type="date" name="data" id="data" />
+            </div>
+            <div class="linha-7-8">
+              <label for=""
+                >Gostaria de receber outras incríveis oportunidades oferecidas
+                pela Trybe?</label
+              >
+              <input type="checkbox" name="termos" id="termos" />
+              <br />
+              <label for=""
+                >Concordo que imagens das minhas férias poderão ser usadas na
+                divulgação de concursos futuros.
+              </label>
+              <input type="checkbox" name="termos" id="termos" />
+            </div>
+          </div>
+        </fieldset>
+        <br />
+        <div class="button">
+          <button type="submit" class="button-enviar">Enviar</button>
+          <button type="reset" class="button-apagar">Apagar</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
